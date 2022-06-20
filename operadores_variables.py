@@ -24,4 +24,4 @@ mensaje="""ESTO ES UN MENSAJE
 CON TRES SALTOS 
 DE LINEA"""
 print(mensaje)
-#El operador = es el operador de asignación en cambio el == es el operador de comparación (si9 dos valores son iguales)
+#El operador = es el operador de asignación en cambio el == es el operador de comparación (si dos valores son iguales)
