@@ -22,8 +22,30 @@
 #Tenemos funciones predefinidas, que son las de python y propias que son las que creamos
 #print("Estamos aprendiendo python")
 
-def imprime():
-    print("Estamos aprendiendo python")
+#def imprime():
+    #print("Estamos aprendiendo python")
     
 #La función no hace nada si no la llamamos
-imprime()
+#imprime()
+
+"""def suma():
+    num1=5
+    num2=7
+    print(num1+num2)
+
+suma()"""
+#FUNCIÓN CON PARAMETROS
+"""def suma(num1,num2):
+    print(num1+num2)
+
+suma(2,2)
+
+suma(4,5)"""
+
+#Funcion utilizando return
+def suma(num1,num2):
+    resultado=num1+num2
+    return resultado
+
+print(suma(56,69)) 
+
