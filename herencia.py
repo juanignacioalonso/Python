@@ -36,8 +36,10 @@ class Moto(Vehiculos):
     def estado(self):
         print("Marca: ", self.marca,"\nModelo: ", self.modelo,"\nEnmarcha: ",self.enmarcha,"\nAcelera: ",self.acelera,"\nFrena: ",self.frena,"\n", self.hwilly)
 
-class VElectricos():
-    def __init__(self):
+class VElectricos(Vehiculos):
+    
+    def __init__(self,marca,modelo):
+        super().__init__(marca,modelo)
         self.autonomia=100
     def cargarEnergia(self):
         self.cargando=True
@@ -51,7 +53,8 @@ miFurgoneta.arrancar()
 miFurgoneta.estado()
 print(miFurgoneta.carga(True))
 #Herencia multiple
-class BicicletaElectrica(Vehiculos,VElectricos):
+class BicicletaElectrica(VElectricos,Vehiculos):
     pass
 #Cuando hay herencia multiple se da preferencia al constructor de la clase que se ponga primero
+#Funcion super() va a llamar al metodo de la clase padre
 miBici=BicicletaElectrica("Orbea","h130")
