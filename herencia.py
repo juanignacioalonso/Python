@@ -58,3 +58,5 @@ class BicicletaElectrica(VElectricos,Vehiculos):
 #Cuando hay herencia multiple se da preferencia al constructor de la clase que se ponga primero
 #Funcion super() va a llamar al metodo de la clase padre
 miBici=BicicletaElectrica("Orbea","h130")
+
+#32 es el proximo video
